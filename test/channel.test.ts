@@ -52,3 +52,29 @@ describe("Kite Agent Channel Settlement Suite", () => {
     }, /nonce must be strictly increasing/);
   });
 });
+import { FacilitatorStreamMiddleware } from "../src/index";
+
+describe("Facilitator Stream Middleware Suite", () => {
+  it("should record active dispute and reject non-increasing nonces", () => {
+    const middleware = new FacilitatorStreamMiddleware();
+    const channelId = ethers.id("test-channel-dispute");
+
+    middleware.registerDispute({
+      channelId,
+      nonce: 5n,
+      challenger: "0x1111111111111111111111111111111111111111",
+      timestamp: Date.now(),
+    });
+
+    assert.strictEqual(middleware.isChannelDisputed(channelId), true);
+
+    assert.throws(() => {
+      middleware.registerDispute({
+        channelId,
+        nonce: 4n, // Stale nonce
+        challenger: "0x2222222222222222222222222222222222222222",
+        timestamp: Date.now(),
+      });
+    }, /stale or non-increasing challenge nonce/);
+  });
+});
