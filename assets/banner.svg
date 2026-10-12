@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#bg)"/>
+  <rect width="1200" height="380" fill="url(#grid)"/>
+
+  <circle cx="200" cy="190" r="140" fill="#38bdf8" opacity="0.08" filter="blur(40px)"/>
+  <circle cx="1000" cy="190" r="150" fill="#10b981" opacity="0.08" filter="blur(50px)"/>
+
+  <!-- Logo Icon -->
+  <g transform="translate(100, 105)">
+    <rect x="0" y="0" width="130" height="130" rx="24" fill="#0f172a" stroke="url(#brand)" stroke-width="3"/>
+    <rect x="35" y="45" width="60" height="55" rx="8" fill="none" stroke="#38bdf8" stroke-width="3"/>
+    <path d="M 50 45 L 50 35 C 50 25, 80 25, 80 35 L 80 45" fill="none" stroke="#818cf8" stroke-width="3"/>
+    <circle cx="65" cy="72" r="6" fill="#10b981"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="260" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+    Kite Agent Task Escrow
+  </text>
+  <text x="260" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="400" fill="#94a3b8">
+    Multi-Agent Task Marketplace Milestone Escrow &amp; x402 Settlement Vault
+  </text>
+
+  <!-- Badges -->
+  <g transform="translate(260, 235)">
+    <rect x="0" y="0" width="135" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="67" y="20" font-family="monospace" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">Kite Chain 2368</text>
+
+    <rect x="150" y="0" width="135" height="30" rx="15" fill="#1e293b" stroke="#818cf8" stroke-width="1.2"/>
+    <text x="217" y="20" font-family="monospace" font-size="12" font-weight="600" fill="#818cf8" text-anchor="middle">Milestone Escrow</text>
+
+    <rect x="300" y="0" width="125" height="30" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
+    <text x="362" y="20" font-family="monospace" font-size="12" font-weight="600" fill="#10b981" text-anchor="middle">x402 Protocol</text>
+
+    <rect x="440" y="0" width="115" height="30" rx="15" fill="#1e293b" stroke="#c084fc" stroke-width="1.2"/>
+    <text x="497" y="20" font-family="monospace" font-size="12" font-weight="600" fill="#c084fc" text-anchor="middle">Apache-2.0</text>
+  </g>
+</svg>

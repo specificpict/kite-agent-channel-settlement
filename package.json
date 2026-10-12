@@ -1,0 +1,29 @@
+{
+  "name": "@specificpict/kite-agent-channel-settlement",
+  "version": "1.0.0",
+  "description": "Autonomous AI Agent State Channel & x402 Micropayment Stream Settlement Network on Kite Chain",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/test/*.js"
+  },
+  "keywords": [
+    "kite-ai",
+    "state-channel",
+    "x402",
+    "micropayments",
+    "ai-agent",
+    "solidity",
+    "web3"
+  ],
+  "author": "specificpict <specificpict@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5"
+  }
+}

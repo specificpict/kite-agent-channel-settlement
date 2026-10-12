@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#121124"/>
+    </linearGradient>
+    <linearGradient id="kiteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#8A2BE2"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b38"/>
+      <stop offset="100%" stop-color="#110e24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="480" fill="url(#bg)" rx="16"/>
+
+  <!-- Top Title -->
+  <text x="480" y="48" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="1">KITE AGENT CHANNEL SETTLEMENT PROTOCOL</text>
+  <text x="480" y="74" fill="#A78BFA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle">Off-Chain State Channels &amp; High-Frequency Micropayment Streaming on Kite Chain (EIP-155: 2366/2368)</text>
+
+  <!-- 3 Columns -->
+  <!-- 1. Off-Chain Channel Stream -->
+  <rect x="40" y="110" width="260" height="310" rx="12" fill="url(#panelGrad)" stroke="#382e66" stroke-width="1.5"/>
+  <rect x="40" y="110" width="260" height="40" rx="12" fill="#2d2254"/>
+  <text x="170" y="136" fill="#00F0FF" font-family="sans-serif" font-size="15" font-weight="600" text-anchor="middle">1. Agent State Channels</text>
+
+  <rect x="60" y="170" width="220" height="60" rx="8" fill="#140f2b" stroke="#4c3d82" stroke-width="1"/>
+  <text x="170" y="196" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Agent A (Inference Consumer)</text>
+  <text x="170" y="216" fill="#94A3B8" font-family="sans-serif" font-size="11" text-anchor="middle">Signs Micro-Voucher Nonce</text>
+
+  <rect x="60" y="250" width="220" height="60" rx="8" fill="#140f2b" stroke="#4c3d82" stroke-width="1"/>
+  <text x="170" y="276" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Off-Chain P2P Stream</text>
+  <text x="170" y="296" fill="#A78BFA" font-family="sans-serif" font-size="11" text-anchor="middle">10,000+ tps Zero-Gas State Updates</text>
+
+  <rect x="60" y="330" width="220" height="65" rx="8" fill="#140f2b" stroke="#4c3d82" stroke-width="1"/>
+  <text x="170" y="356" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Agent B (Compute Provider)</text>
+  <text x="170" y="378" fill="#00F0FF" font-family="sans-serif" font-size="11" text-anchor="middle">Validates Cryptographic Signatures</text>
+
+  <!-- 2. On-Chain Settlement Contract -->
+  <rect x="350" y="110" width="260" height="310" rx="12" fill="url(#panelGrad)" stroke="#00F0FF" stroke-width="2"/>
+  <rect x="350" y="110" width="260" height="40" rx="12" fill="#0e2a3b"/>
+  <text x="480" y="136" fill="#38BDF8" font-family="sans-serif" font-size="15" font-weight="600" text-anchor="middle">2. Kite Chain Settlement</text>
+
+  <rect x="370" y="170" width="220" height="60" rx="8" fill="#0b1b26" stroke="#0284c7" stroke-width="1"/>
+  <text x="480" y="196" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Bonded Collateral Vault</text>
+  <text x="480" y="216" fill="#7DD3FC" font-family="sans-serif" font-size="11" text-anchor="middle">openChannel() Initial Stake</text>
+
+  <rect x="370" y="250" width="220" height="60" rx="8" fill="#0b1b26" stroke="#0284c7" stroke-width="1"/>
+  <text x="480" y="276" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Cooperative Close</text>
+  <text x="480" y="296" fill="#34D399" font-family="sans-serif" font-size="11" text-anchor="middle">Dual-Signed Instant Payout</text>
+
+  <rect x="370" y="330" width="220" height="65" rx="8" fill="#0b1b26" stroke="#0284c7" stroke-width="1"/>
+  <text x="480" y="356" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Unilateral Challenge Exit</text>
+  <text x="480" y="378" fill="#F43F5E" font-family="sans-serif" font-size="11" text-anchor="middle">24h Dispute Window &amp; Slashing</text>
+
+  <!-- 3. x402 Facilitator Middleware -->
+  <rect x="660" y="110" width="260" height="310" rx="12" fill="url(#panelGrad)" stroke="#382e66" stroke-width="1.5"/>
+  <rect x="660" y="110" width="260" height="40" rx="12" fill="#2d2254"/>
+  <text x="790" y="136" fill="#A78BFA" font-family="sans-serif" font-size="15" font-weight="600" text-anchor="middle">3. x402 Facilitator v2</text>
+
+  <rect x="680" y="170" width="220" height="60" rx="8" fill="#140f2b" stroke="#4c3d82" stroke-width="1"/>
+  <text x="790" y="196" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">HTTP 402 Headers</text>
+  <text x="790" y="216" fill="#C4B5FD" font-family="sans-serif" font-size="11" text-anchor="middle">X-PAYMENT-CHANNEL-VOUCHER</text>
+
+  <rect x="680" y="250" width="220" height="60" rx="8" fill="#140f2b" stroke="#4c3d82" stroke-width="1"/>
+  <text x="790" y="276" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Voucher Aggregator</text>
+  <text x="790" y="296" fill="#C4B5FD" font-family="sans-serif" font-size="11" text-anchor="middle">Monotonic Nonce Verification</text>
+
+  <rect x="680" y="330" width="220" height="65" rx="8" fill="#140f2b" stroke="#4c3d82" stroke-width="1"/>
+  <text x="790" y="356" fill="#F1F5F9" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Relayer Auto-Batch</text>
+  <text x="790" y="378" fill="#34D399" font-family="sans-serif" font-size="11" text-anchor="middle">Periodic Settlement to Kite L1</text>
+
+  <!-- Connective Arrows -->
+  <path d="M 300 200 L 350 200" stroke="#00F0FF" stroke-width="2" stroke-dasharray="4"/>
+  <path d="M 610 200 L 660 200" stroke="#A78BFA" stroke-width="2" stroke-dasharray="4"/>
+</svg>
